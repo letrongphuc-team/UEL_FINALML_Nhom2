@@ -1,0 +1,14 @@
+{
+  "extension_id": "20261107_223213_778891",
+  "model_run_id": "20261107_223206_481643",
+  "snapshot_sha256": "6c3115f5471d85e79c0b412ca22ca58c0bd91e41bfd3d6cbd727cfa3aaf55d57",
+  "max_horizons": {
+    "monthly": 3,
+    "weekly": 12
+  },
+  "evaluation_note": "Retrospective diagnostics of already selected model families, using earlier origins. Not new holdout evidence or a new selection experiment. All diagnostic targets precede the published test boundary. Errors are separated by horizon; no calibrated interval is claimed.",
+  "source_cutoffs": {
+    "monthly": "2011-11-30",
+    "weekly": "2011-12-04"
+  }
+}

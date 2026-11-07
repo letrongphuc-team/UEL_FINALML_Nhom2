@@ -1,0 +1,40 @@
+{
+  "run_id": "20261107_223206_481643",
+  "source": "mysql:Daily_Sales",
+  "profile": "coursework-v3-monthly",
+  "reference_run": "20261107_215317_027878",
+  "snapshot_sha256": "6c3115f5471d85e79c0b412ca22ca58c0bd91e41bfd3d6cbd727cfa3aaf55d57",
+  "source_sha256": "5805a5cbbf0da97044622a197f5397cbbc58f2366417ad46dd8d688fefbfd78e",
+  "is_simulated": true,
+  "currency": "GBP",
+  "data_cutoff": "2011-12-09",
+  "selection": "Eight expanding validation origins; >=3% total WAPE gain and SKU WAPE degradation <=10%. Weekly family retained.",
+  "evaluation_note": "The final test was previously inspected. It is used as a retrospective deployment acceptance check, not a new untouched holdout.",
+  "statistical_note": "Eight validation origins and few test periods: descriptive results only; no statistical superiority or calibrated intervals claimed.",
+  "test_use": {
+    "candidate_selection": false,
+    "deployment_acceptance": true,
+    "scope": "Previously inspected retrospective backtest; no hyperparameter tuning on test"
+  },
+  "configurations": {
+    "monthly_candidates": [
+      "RidgeShort|total|raw",
+      "RidgeShort|total|log",
+      "CalendarRidge1|total|raw",
+      "CalendarRidge1|total|log"
+    ],
+    "weekly": "Retain incumbent CatBoost family",
+    "seed": 42
+  },
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10"
+  },
+  "selections": {},
+  "evaluation_origins": {},
+  "complete_period_cutoffs": {},
+  "improvement_comparison": {}
+}

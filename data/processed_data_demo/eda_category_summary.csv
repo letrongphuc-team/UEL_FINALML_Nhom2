@@ -1,0 +1,7 @@
+﻿category,category_vi,product_count,panel_rows,zero_sale_days,zero_sale_rate,quantity_sold,revenue_gbp,outlier_source_lines,revenue_share,catalog_min_price_usd,catalog_median_price_usd,catalog_max_price_usd,currency_revenue,currency_catalog_price,is_simulated_sales
+conditioner,Dầu xả,8,5912,1621,0.27418809201623817,204884,322240.73,252,0.08885819529303896,30.0,30.0,30.0,GBP,USD,True
+dry shampoo,Dầu gội khô,2,1478,655,0.4431664411366712,52091,159857.04,53,0.04408073454676925,30.0,30.0,30.0,GBP,USD,True
+hairmask,Ủ tóc,11,8129,2165,0.26633042194611883,374211,540162.79,334,0.1489504156841154,30.0,30.0,46.0,GBP,USD,True
+hairstyling,Tạo kiểu tóc,23,16997,5412,0.31840913102312174,447447,1059465.09,431,0.2921485309239993,30.0,32.0,36.0,GBP,USD,True
+shampoo,Dầu gội,10,7390,1684,0.22787550744248986,552648,1315481.81,695,0.3627453909300056,30.0,30.0,33.0,GBP,USD,True
+treatment,Dưỡng tóc,5,3695,998,0.2700947225981056,89758,229252.98,40,0.06321673262207157,32.0,50.0,50.0,GBP,USD,True

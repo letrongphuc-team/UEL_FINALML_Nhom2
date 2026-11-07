@@ -1,0 +1,106 @@
+{
+  "monthly:quantity_sold": {
+    "candidate": "RidgeShort|total|log",
+    "reference": "CatBoost|sku|raw",
+    "validation_candidate": {
+      "model": "RidgeShort|total|log",
+      "total_wape_pct": 13.376983801897874,
+      "total_mae": 8944.269400692727,
+      "total_rmse": 9942.993543656714,
+      "total_bias": 461.36044800999025,
+      "sku_wape_pct": 36.90772036081296,
+      "sku_mae": 418.26534236442075,
+      "sku_rmse": 658.4810419569092,
+      "sku_bias": 7.819668610338814
+    },
+    "validation_reference": {
+      "model": "CatBoost|sku|raw",
+      "total_wape_pct": 18.815590903235094,
+      "total_mae": 12580.69206511871,
+      "total_rmse": 15454.058159421811,
+      "total_bias": -6248.44625454575,
+      "sku_wape_pct": 39.54509568786829,
+      "sku_mae": 448.15401290083025,
+      "sku_rmse": 714.1085243105082,
+      "sku_bias": -105.90586872111437
+    }
+  },
+  "monthly:revenue_gbp": {
+    "candidate": "RidgeShort|total|log",
+    "reference": "CatBoost|total|raw",
+    "validation_candidate": {
+      "model": "RidgeShort|total|log",
+      "total_wape_pct": 10.844950761692244,
+      "total_mae": 15302.832570866643,
+      "total_rmse": 18414.577181115106,
+      "total_bias": 829.9490512536267,
+      "sku_wape_pct": 37.672915394075325,
+      "sku_mae": 900.9930908894822,
+      "sku_rmse": 1529.7104821511648,
+      "sku_bias": 14.066933072095392
+    },
+    "validation_reference": {
+      "model": "CatBoost|total|raw",
+      "total_wape_pct": 14.956728007633377,
+      "total_mae": 21104.780421620922,
+      "total_rmse": 26193.01675285134,
+      "total_bias": -7724.411961904996,
+      "sku_wape_pct": 38.05837602654044,
+      "sku_mae": 910.2118456109599,
+      "sku_rmse": 1531.121226737483,
+      "sku_bias": -130.92223664245753
+    }
+  },
+  "weekly:quantity_sold": {
+    "candidate": "CatBoost|sku|raw",
+    "reference": "CatBoost|sku|raw",
+    "validation_candidate": {
+      "model": "CatBoost|sku|raw",
+      "total_wape_pct": 20.556478462083245,
+      "total_mae": 3393.5020079178184,
+      "total_rmse": 4085.9753989879027,
+      "total_bias": 917.3734168114452,
+      "sku_wape_pct": 53.54758714754902,
+      "sku_mae": 149.8260353905643,
+      "sku_rmse": 264.6370402918428,
+      "sku_bias": 15.548701979855005
+    },
+    "validation_reference": {
+      "model": "CatBoost|sku|raw",
+      "total_wape_pct": 20.556478462083245,
+      "total_mae": 3393.5020079178184,
+      "total_rmse": 4085.9753989879027,
+      "total_bias": 917.3734168114452,
+      "sku_wape_pct": 53.54758714754902,
+      "sku_mae": 149.8260353905643,
+      "sku_rmse": 264.6370402918428,
+      "sku_bias": 15.548701979855005
+    }
+  },
+  "weekly:revenue_gbp": {
+    "candidate": "CatBoost|sku|raw",
+    "reference": "CatBoost|sku|raw",
+    "validation_candidate": {
+      "model": "CatBoost|sku|raw",
+      "total_wape_pct": 17.720237493419106,
+      "total_mae": 6385.007362317503,
+      "total_rmse": 7504.634354296175,
+      "total_bias": 357.8468269911748,
+      "sku_wape_pct": 48.04443973661072,
+      "sku_mae": 293.415455165607,
+      "sku_rmse": 518.7369365775729,
+      "sku_bias": 6.06520045747754
+    },
+    "validation_reference": {
+      "model": "CatBoost|sku|raw",
+      "total_wape_pct": 17.720237493419106,
+      "total_mae": 6385.007362317503,
+      "total_rmse": 7504.634354296175,
+      "total_bias": 357.8468269911748,
+      "sku_wape_pct": 48.04443973661072,
+      "sku_mae": 293.415455165607,
+      "sku_rmse": 518.7369365775729,
+      "sku_bias": 6.06520045747754
+    }
+  }
+}

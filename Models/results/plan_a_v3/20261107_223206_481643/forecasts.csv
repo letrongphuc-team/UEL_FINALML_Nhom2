@@ -1,0 +1,1063 @@
+product_id,category,product_name,period,horizon,forecast,frequency,target,role,model,run_id,data_cutoff,currency,is_simulated
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,2483.82392489931,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,1386.478170779405,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,455.8247207242257,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,1017.5289179716486,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,4268.30033307104,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,6125.534945622814,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,944.7707135916055,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,2052.432929526591,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,790.2952722026332,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,1084.8574056069124,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,1732.894099096327,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,1500.77370825701,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,568.2198573411581,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,3649.5841100034345,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,779.4358387130744,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,1764.929427890525,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,698.2615733786233,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,1403.8532643626988,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,725.681642939759,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,1832.8008872002667,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,950.4719161736238,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,1321.5930556792916,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,1543.396984703528,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,867.9402216529778,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,255.73965867910698,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,126.51240015335866,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,684.1443098421971,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,1160.0589825221064,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,313.8376278482459,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,959.9739204769876,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,160.7196156454685,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,610.300162113198,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,949.3859728246679,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,732.1973030334942,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,825.045459369221,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,587.4953517851247,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,618.9877089048449,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,480.25844607573276,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,1040.8766999741997,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,831.832605300195,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,655.0953252576276,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,1140.7834880781395,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,173.75093583293892,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,429.219108674807,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,768.5764052235157,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,197.37020367272908,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,896.1747487258303,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,2207.179856752802,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,720.5234120322186,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,3007.5201049332773,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,208.22963716228773,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,1537.9672679587484,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,724.0527279163252,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,977.0775282230426,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,1133.1818846354486,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,562.5186547591398,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,674.9137913760721,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,787.0374421557656,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,1458.421917647731,monthly,quantity_sold,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,2483.82392489931,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,1386.478170779405,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,455.8247207242257,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,1017.5289179716486,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,4268.30033307104,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,6125.534945622814,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,944.7707135916055,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,2052.432929526591,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,790.2952722026332,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,1084.8574056069124,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,1732.894099096327,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,1500.77370825701,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,568.2198573411581,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,3649.5841100034345,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,779.4358387130744,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,1764.929427890525,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,698.2615733786233,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,1403.8532643626988,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,725.681642939759,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,1832.8008872002667,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,950.4719161736238,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,1321.5930556792916,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,1543.396984703528,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,867.9402216529778,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,255.73965867910698,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,126.51240015335866,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,684.1443098421971,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,1160.0589825221064,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,313.8376278482459,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,959.9739204769876,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,160.7196156454685,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,610.300162113198,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,949.3859728246679,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,732.1973030334942,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,825.045459369221,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,587.4953517851247,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,618.9877089048449,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,480.25844607573276,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,1040.8766999741997,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,831.832605300195,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,655.0953252576276,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,1140.7834880781395,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,173.75093583293892,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,429.219108674807,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,768.5764052235157,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,197.37020367272908,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,896.1747487258303,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,2207.179856752802,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,720.5234120322186,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,3007.5201049332773,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,208.22963716228773,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,1537.9672679587484,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,724.0527279163252,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,977.0775282230426,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,1133.1818846354486,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,562.5186547591398,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,674.9137913760721,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,787.0374421557656,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,1458.421917647731,monthly,quantity_sold,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,3049.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,1702.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,559.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,1249.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,5240.666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,7520.999999999999,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,1160.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,2520.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,970.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,1331.9999999999998,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,2127.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,1842.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,697.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,4481.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,956.9999999999999,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,2167.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,857.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,1723.6666666666667,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,891.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,2250.333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,1167.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,1622.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,1895.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,1065.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,314.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,155.33333333333331,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,840.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,1424.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,385.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,1178.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,197.33333333333331,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,749.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,1165.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,899.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,1013.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,721.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,759.9999999999999,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,589.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,1278.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,1021.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,804.3333333333334,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,1400.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,213.33333333333331,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,527.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,943.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,242.33333333333334,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,1100.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,2710.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,884.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,3692.6666666666665,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,255.66666666666663,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,1888.333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,889.0,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,1199.6666666666667,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,1391.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,690.6666666666667,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,828.6666666666666,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,966.3333333333333,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,1790.6666666666667,monthly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,7199.347065282948,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,699.3737514115277,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,1327.7231230474367,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,2301.885412725533,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,8478.283473788028,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,6183.208243518365,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,2910.6572184977367,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,4078.6048766371064,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,10033.564018238274,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,2427.0003022921605,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,2684.9889324128744,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,3144.166373022358,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,1073.854502947196,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,12308.777355476264,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,2074.964993535576,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,2401.4792050518745,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,3517.1489390960364,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,2701.9774806990167,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,4062.6497482499276,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,1664.2297941687957,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,1927.8448215172016,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,2264.3733639591733,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,2801.1475161884805,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,4449.444053290711,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,791.2332979860987,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,794.431978625749,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,3566.742158585998,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,2392.2686451587274,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,2058.2498367570965,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,1318.8597703690211,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,1006.3705431958055,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,1921.8876205652377,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,2330.539576643631,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,621.3833560206707,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,2614.686306217484,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,995.2462427490219,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,1309.3266084968327,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,2520.2514116407337,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,5656.136755895996,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,1132.879729451511,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,1408.6333397401283,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,2041.616697430915,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,1560.6116788496643,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,417.9691386595283,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,1472.7108413060448,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,1576.1211790793527,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,1569.3711427551677,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,1304.2114533884692,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,2134.6463596582817,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,4954.111106860144,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,199.20672205821793,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,1960.3948144194885,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,1398.4084973535541,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,1846.674882892231,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,2163.926590128926,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,1250.4435455765022,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,2027.2335702127957,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,968.071126887378,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,710.2383299260321,monthly,revenue_gbp,champion,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,7199.347065282948,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,699.3737514115277,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,1327.7231230474367,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,2301.885412725533,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,8478.283473788028,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,6183.208243518365,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,2910.6572184977367,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,4078.6048766371064,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,10033.564018238274,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,2427.0003022921605,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,2684.9889324128744,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,3144.166373022358,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,1073.854502947196,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,12308.777355476264,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,2074.964993535576,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,2401.4792050518745,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,3517.1489390960364,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,2701.9774806990167,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,4062.6497482499276,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,1664.2297941687957,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,1927.8448215172016,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,2264.3733639591733,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,2801.1475161884805,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,4449.444053290711,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,791.2332979860987,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,794.431978625749,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,3566.742158585998,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,2392.2686451587274,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,2058.2498367570965,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,1318.8597703690211,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,1006.3705431958055,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,1921.8876205652377,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,2330.539576643631,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,621.3833560206707,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,2614.686306217484,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,995.2462427490219,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,1309.3266084968327,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,2520.2514116407337,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,5656.136755895996,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,1132.879729451511,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,1408.6333397401283,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,2041.616697430915,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,1560.6116788496643,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,417.9691386595283,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,1472.7108413060448,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,1576.1211790793527,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,1569.3711427551677,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,1304.2114533884692,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,2134.6463596582817,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,4954.111106860144,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,199.20672205821793,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,1960.3948144194885,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,1398.4084973535541,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,1846.674882892231,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,2163.926590128926,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,1250.4435455765022,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,2027.2335702127957,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,968.071126887378,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,710.2383299260321,monthly,revenue_gbp,best_ml,RidgeShort|total|log,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-01,1,8777.823333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-01,1,852.7133333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-01,1,1618.8300000000002,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-01,1,2806.58,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-01,1,10337.170000000002,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-01,1,7538.893333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-01,1,3548.8266666666664,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-01,1,4972.85,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-01,1,12233.45,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-01,1,2959.126666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-01,1,3273.6800000000007,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-01,1,3833.5333333333338,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-01,1,1309.3,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-01,1,15007.510000000002,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-01,1,2529.9066666666663,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-01,1,2928.01,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-01,1,4288.293333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-01,1,3294.393333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-01,1,4953.396666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-01,1,2029.1166666666668,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-01,1,2350.53,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-01,1,2760.8433333333332,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-01,1,3415.306666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-01,1,5424.996666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-01,1,964.7133333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-01,1,968.6133333333335,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-01,1,4348.76,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-01,1,2916.78,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-01,1,2509.5266666666666,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-01,1,1608.0233333333333,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-01,1,1227.02,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-01,1,2343.266666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-01,1,2841.516666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-01,1,757.6233333333332,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-01,1,3187.963333333333,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-01,1,1213.4566666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-01,1,1596.3999999999999,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-01,1,3072.8233333333337,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-01,1,6896.259999999999,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-01,1,1381.2666666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-01,1,1717.4800000000002,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-01,1,2489.246666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-01,1,1902.7800000000002,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-01,1,509.60999999999996,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-01,1,1795.6066666666666,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-01,1,1921.69,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-01,1,1913.46,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-01,1,1590.1633333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-01,1,2602.6733333333336,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-01,1,6040.313333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-01,1,242.88333333333335,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-01,1,2390.2166666666667,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-01,1,1705.0133333333335,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-01,1,2251.5633333333335,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-01,1,2638.3733333333334,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-01,1,1524.6066666666668,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-01,1,2471.71,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-01,1,1180.3233333333335,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-01,1,865.96,monthly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,737.7919386438036,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,343.3909989940741,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,178.84109112696706,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,288.28334341464443,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,1164.0370956561173,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,2020.1720818806505,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,229.17752872553598,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,427.05758881364386,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,247.27802123439363,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,323.74578491647725,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,558.9629095445102,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,258.5160633757107,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,111.75177963984859,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,1368.5110126216302,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,227.17530470272976,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,433.75116261497044,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,229.1493026293171,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,393.4366568083829,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,186.8389977789903,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,530.6420007819279,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,236.30923764138328,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,434.7803314481855,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,501.59859963215683,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,331.2226354376857,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,55.51955289920261,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,47.34903922430456,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,249.97267378497452,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,300.03650628068874,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,54.02798297507712,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,330.71212287835357,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,53.84024072177115,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,205.26883867236478,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,266.96866911326975,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,204.4562429485427,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,206.56098367284585,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,182.50197388964312,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,164.81242351414238,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,212.24238713519895,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,330.7853636247676,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,247.59419824716755,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,199.47989452089632,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,344.16305843232533,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,85.01348293404527,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,224.85718235233918,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,236.40643339680332,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,113.8291686488632,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,217.4083181635138,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,402.69555408018476,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,271.75641467789865,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,1285.7660336797173,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,97.76922727445387,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,401.57207222666807,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,217.1095514009399,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,280.59653391768126,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,251.4360329832704,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,165.83048043723932,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,235.88308803893844,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,237.59784746895954,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,339.17912791864825,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,545.9068217400187,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,327.17031703598525,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,176.14683595890943,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,250.5254440266699,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,758.5027568705138,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,1648.3053229104119,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,187.54023427987124,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,405.132918248554,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,284.3780931166699,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,238.6629185484054,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,382.113073098626,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,308.54531137751064,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,135.10803756594171,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,796.7870304339259,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,189.34692686271444,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,238.7326671517555,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,194.8744739912554,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,315.9885452636024,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,186.97383586767103,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,359.6601809013396,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,217.0116598163412,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,320.3775792849647,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,387.7633655524697,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,245.85822290251687,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,26.614334451691434,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,47.47062459639315,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,219.55852607103807,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,276.2581870627445,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,63.34601718392193,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,269.03030489877904,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,23.426093007834766,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,175.17008304605685,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,248.18674846815662,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,207.49683974912426,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,171.3507725479655,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,177.64632440730233,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,138.74878823733718,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,180.85148650840995,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,304.1266380645633,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,276.0134758069068,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,150.2151759338897,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,234.12975593746663,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,127.49224837846361,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,150.93896534007692,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,192.0770643584186,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,83.41502093492682,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,201.37442199917479,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,443.22743616641424,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,241.3422669639622,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,1017.0393513070798,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,82.05362505126766,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,287.7546689249417,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,195.76520314183495,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,212.52250663946683,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,247.50830386255052,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,144.4665309169282,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,198.23440303857862,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,218.31751564595496,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,177.70020730296295,weekly,quantity_sold,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,737.7919386438036,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,343.3909989940741,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,178.84109112696706,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,288.28334341464443,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,1164.0370956561173,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,2020.1720818806505,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,229.17752872553598,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,427.05758881364386,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,247.27802123439363,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,323.74578491647725,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,558.9629095445102,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,258.5160633757107,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,111.75177963984859,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,1368.5110126216302,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,227.17530470272976,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,433.75116261497044,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,229.1493026293171,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,393.4366568083829,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,186.8389977789903,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,530.6420007819279,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,236.30923764138328,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,434.7803314481855,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,501.59859963215683,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,331.2226354376857,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,55.51955289920261,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,47.34903922430456,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,249.97267378497452,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,300.03650628068874,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,54.02798297507712,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,330.71212287835357,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,53.84024072177115,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,205.26883867236478,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,266.96866911326975,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,204.4562429485427,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,206.56098367284585,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,182.50197388964312,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,164.81242351414238,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,212.24238713519895,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,330.7853636247676,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,247.59419824716755,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,199.47989452089632,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,344.16305843232533,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,85.01348293404527,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,224.85718235233918,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,236.40643339680332,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,113.8291686488632,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,217.4083181635138,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,402.69555408018476,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,271.75641467789865,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,1285.7660336797173,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,97.76922727445387,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,401.57207222666807,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,217.1095514009399,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,280.59653391768126,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,251.4360329832704,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,165.83048043723932,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,235.88308803893844,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,237.59784746895954,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,339.17912791864825,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,545.9068217400187,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,327.17031703598525,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,176.14683595890943,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,250.5254440266699,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,758.5027568705138,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,1648.3053229104119,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,187.54023427987124,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,405.132918248554,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,284.3780931166699,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,238.6629185484054,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,382.113073098626,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,308.54531137751064,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,135.10803756594171,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,796.7870304339259,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,189.34692686271444,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,238.7326671517555,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,194.8744739912554,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,315.9885452636024,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,186.97383586767103,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,359.6601809013396,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,217.0116598163412,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,320.3775792849647,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,387.7633655524697,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,245.85822290251687,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,26.614334451691434,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,47.47062459639315,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,219.55852607103807,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,276.2581870627445,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,63.34601718392193,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,269.03030489877904,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,23.426093007834766,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,175.17008304605685,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,248.18674846815662,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,207.49683974912426,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,171.3507725479655,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,177.64632440730233,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,138.74878823733718,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,180.85148650840995,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,304.1266380645633,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,276.0134758069068,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,150.2151759338897,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,234.12975593746663,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,127.49224837846361,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,150.93896534007692,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,192.0770643584186,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,83.41502093492682,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,201.37442199917479,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,443.22743616641424,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,241.3422669639622,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,1017.0393513070798,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,82.05362505126766,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,287.7546689249417,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,195.76520314183495,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,212.52250663946683,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,247.50830386255052,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,144.4665309169282,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,198.23440303857862,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,218.31751564595496,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,177.70020730296295,weekly,quantity_sold,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,888.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,337.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,175.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,291.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,1401.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,3318.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,323.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,431.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,225.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,403.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,466.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,297.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,137.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,1713.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,182.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,740.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,264.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,453.24999999999994,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,228.24999999999997,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,662.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,208.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,573.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,422.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,420.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,77.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,27.999999999999996,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,244.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,397.49999999999994,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,51.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,402.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,52.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,210.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,334.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,218.00000000000003,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,195.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,171.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,170.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,204.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,451.49999999999994,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,270.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,177.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,476.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,105.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,154.5,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,224.75000000000003,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,70.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,343.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,459.99999999999994,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,240.75000000000003,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,1266.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,83.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,573.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,202.25,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,322.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,248.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,108.24999999999999,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,243.25000000000003,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,322.75,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,310.0,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,880.099000802903,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,333.9672439052366,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,173.29656837187963,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,288.6625696023023,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,1387.6103796062646,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,3286.4456359095743,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,319.8559519092407,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,427.5473908260516,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,223.05744014723362,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,399.32480683405976,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,461.7115714479365,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,294.6041662321953,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,135.91402290880274,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,1696.5734043607015,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,180.47599763300036,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,732.7969176868053,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,261.4302517152927,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,448.8381120831682,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,226.02823846218013,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,655.8037280244416,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,206.4704828887823,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,567.917611207274,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,417.8922963024755,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,416.40689714500223,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,76.25049008362704,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,27.727450939500738,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,242.12006266814038,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,393.63077673041226,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,50.50357135409063,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,398.0869742028321,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,51.988970511563885,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,208.20344857250112,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,330.74887906404456,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,215.87801088611292,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,193.84459005025965,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,169.33550395195095,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,168.34523784696879,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,202.75698499509915,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,447.1051463994494,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,267.6194148714313,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,175.52466710808952,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,471.61423249775817,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,103.97794102312777,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,152.99611321974515,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,222.56230709474258,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,70.06132692748848,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,340.4039735876207,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,455.52240829179783,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,238.40656477445728,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,1253.6768889074262,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,82.19208671352004,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,567.422478154783,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,200.28131973264374,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,319.6083853829951,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,246.3286936143146,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,107.19630586431983,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,240.8822300369127,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,319.6083853829951,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,306.9824925444725,weekly,quantity_sold,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,units,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,2738.4158219528786,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,214.92453983842893,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,566.5496817737729,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,611.1181704641957,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,2729.8103557592517,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,3776.4207742890626,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,998.018351311991,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,867.2855980466657,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,3268.356016334442,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,671.996366898825,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,704.4163782432971,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,749.772625069003,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,241.64910979420222,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,4042.1625244373886,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,606.873199028223,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,751.0924214731793,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,934.2896161580118,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,828.7913259612367,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,888.4445948526638,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,592.851105113419,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,554.3828246893135,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,1019.2597638071151,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,828.2673892773112,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,2253.0736267084917,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,319.68376720954075,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,299.24376457299974,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,1023.2230728998492,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,774.1503000449154,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,450.5853349641658,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,563.3072021460291,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,376.1597055462616,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,610.531510254084,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,798.192752177328,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,260.96181383190714,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,722.9955299699307,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,336.05729686960325,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,333.06820218393773,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,833.6757412557305,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,2590.672397041905,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,459.16963854077574,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,406.02732758672676,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,683.9790405112352,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,663.1665487997017,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,326.5980775314121,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,387.6598225889527,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,650.9076160070977,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,472.2421819963257,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,402.49962742556625,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,814.1335747017404,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,1941.8087383263087,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,183.44444155835856,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,828.7988460287345,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,404.64606014415574,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,579.9236913951097,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,589.7982616472752,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,367.7063104820482,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,822.9331106205289,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,448.6951190043577,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,231.7540651513744,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,1851.6093864135541,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,236.27106633740607,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,427.372160780682,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,436.65600884621415,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,2077.956286716141,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,1913.0139281321206,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,973.7316403635018,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,747.6623367538928,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,3065.3471594385574,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,544.8607210560223,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,621.8385366281151,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,479.2559760246704,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,295.7745612011859,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,2445.0584314629386,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,519.4731044227557,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,550.2318323408682,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,842.2643948089394,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,676.3999113013538,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,1004.5279291247303,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,425.89741151571906,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,435.7601842204812,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,786.2219515067495,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,843.7846396764583,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,1826.974330188604,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,262.1104859943431,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,258.6780246626605,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,907.6662354504754,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,638.3373308978779,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,495.3037756376078,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,403.00287470061016,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,367.38986683626536,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,492.6347135848604,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,603.6252772455159,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,221.58786710970418,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,476.38057058592693,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,342.65182034070284,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,313.7359035445498,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,817.7943563411352,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,2365.6150511065325,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,413.7561936881636,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,344.0893091566467,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,523.4393219961047,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,413.0541471236718,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,256.606688325224,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,372.3251913592003,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,459.04922485012594,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,403.2631896588433,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,377.69908972766893,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,648.1402306683658,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,1860.8477302184174,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,215.36704645111104,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,631.8534135930927,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,368.5572145810502,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,403.61048370938335,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,482.190426154114,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,320.3045614589087,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,651.381608895755,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,314.1140099631149,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,200.50504310366745,weekly,revenue_gbp,champion,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,2738.4158219528786,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,214.92453983842893,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,566.5496817737729,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,611.1181704641957,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,2729.8103557592517,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,3776.4207742890626,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,998.018351311991,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,867.2855980466657,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,3268.356016334442,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,671.996366898825,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,704.4163782432971,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,749.772625069003,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,241.64910979420222,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,4042.1625244373886,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,606.873199028223,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,751.0924214731793,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,934.2896161580118,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,828.7913259612367,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,888.4445948526638,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,592.851105113419,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,554.3828246893135,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,1019.2597638071151,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,828.2673892773112,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,2253.0736267084917,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,319.68376720954075,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,299.24376457299974,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,1023.2230728998492,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,774.1503000449154,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,450.5853349641658,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,563.3072021460291,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,376.1597055462616,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,610.531510254084,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,798.192752177328,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,260.96181383190714,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,722.9955299699307,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,336.05729686960325,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,333.06820218393773,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,833.6757412557305,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,2590.672397041905,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,459.16963854077574,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,406.02732758672676,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,683.9790405112352,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,663.1665487997017,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,326.5980775314121,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,387.6598225889527,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,650.9076160070977,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,472.2421819963257,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,402.49962742556625,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,814.1335747017404,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,1941.8087383263087,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,183.44444155835856,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,828.7988460287345,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,404.64606014415574,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,579.9236913951097,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,589.7982616472752,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,367.7063104820482,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,822.9331106205289,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,448.6951190043577,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,231.7540651513744,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,1851.6093864135541,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,236.27106633740607,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,427.372160780682,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,436.65600884621415,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,2077.956286716141,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,1913.0139281321206,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,973.7316403635018,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,747.6623367538928,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,3065.3471594385574,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,544.8607210560223,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,621.8385366281151,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,479.2559760246704,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,295.7745612011859,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,2445.0584314629386,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,519.4731044227557,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,550.2318323408682,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,842.2643948089394,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,676.3999113013538,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,1004.5279291247303,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,425.89741151571906,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,435.7601842204812,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,786.2219515067495,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,843.7846396764583,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,1826.974330188604,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,262.1104859943431,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,258.6780246626605,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,907.6662354504754,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,638.3373308978779,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,495.3037756376078,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,403.00287470061016,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,367.38986683626536,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,492.6347135848604,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,603.6252772455159,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,221.58786710970418,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,476.38057058592693,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,342.65182034070284,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,313.7359035445498,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,817.7943563411352,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,2365.6150511065325,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,413.7561936881636,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,344.0893091566467,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,523.4393219961047,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,413.0541471236718,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,256.606688325224,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,372.3251913592003,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,459.04922485012594,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,403.2631896588433,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,377.69908972766893,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,648.1402306683658,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,1860.8477302184174,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,215.36704645111104,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,631.8534135930927,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,368.5572145810502,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,403.61048370938335,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,482.190426154114,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,320.3045614589087,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,651.381608895755,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,314.1140099631149,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,200.50504310366745,weekly,revenue_gbp,best_ml,CatBoost|sku|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-05,1,2495.1225,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-05,1,180.74,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-05,1,505.6499999999999,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-05,1,616.7950000000001,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-05,1,2759.8875,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-05,1,3737.3975,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-05,1,1036.87,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-05,1,882.965,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-05,1,3043.68,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-05,1,853.9225,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-05,1,844.785,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-05,1,668.9275,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-05,1,287.265,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-05,1,6525.5675,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-05,1,536.185,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-05,1,1087.84,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-05,1,1317.44,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-05,1,947.855,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-05,1,1189.7775,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-05,1,720.2275,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-05,1,490.135,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-05,1,1122.4875,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-05,1,857.3050000000001,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-05,1,2154.2225,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-05,1,227.69000000000003,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-05,1,177.61,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-05,1,1374.3925,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-05,1,794.6625,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-05,1,423.92499999999995,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-05,1,538.0075,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-05,1,328.08500000000004,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-05,1,677.9175,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-05,1,840.0375,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-05,1,178.25,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-05,1,692.8925,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-05,1,292.65999999999997,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-05,1,351.4125,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-05,1,1050.3525,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-05,1,2538.94,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-05,1,451.0975,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-05,1,373.155,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-05,1,864.8525,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-05,1,830.34,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-05,1,148.7175,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-05,1,417.92,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-05,1,558.1775,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-05,1,570.3475,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-05,1,360.3175,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-05,1,670.3725,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-05,1,2020.36,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-05,1,78.85,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-05,1,845.2850000000001,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-05,1,371.5225,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-05,1,613.045,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-05,1,478.8375,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-05,1,284.01,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-05,1,757.6624999999999,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-05,1,391.885,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-05,1,159.275,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090633945,shampoo,Blonde Perfecting Purple Shampoo,2011-12-12,2,2486.8812231227844,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090666713,conditioner,Blonde Perfecting Purple Conditioner,2011-12-12,2,180.14302394660464,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161090765017,treatment,Intense Smoothing Serum,2011-12-12,2,503.97986089742517,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091223769,hairmask,Bordeaux Color Depositing Mask,2011-12-12,2,614.7577539844308,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091289305,shampoo,Clarifying Shampoo,2011-12-12,2,2750.771716290997,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091322073,hairmask,Cocoa Color Depositing Mask,2011-12-12,2,3725.0530449290713,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091354841,conditioner,Color Care Conditioner,2011-12-12,2,1033.4452652402122,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091453145,hairmask,Copper Color Depositing Mask,2011-12-12,2,880.0486065011274,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091485913,shampoo,Color Care Shampoo,2011-12-12,2,3033.6268624864533,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091551449,hairmask,Coral Color Depositing Mask,2011-12-12,2,851.1020325663633,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091584217,hairstyling,Curl Control Mousse,2011-12-12,2,841.9947133159919,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091616985,hairstyling,Curl Defining Cream,2011-12-12,2,666.7180626924995,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091649753,conditioner,Curl Enhancing Conditioner,2011-12-12,2,286.3161766848588,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091748057,dry shampoo,Dry Shampoo Dark Tones,2011-12-12,2,6504.013845400493,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091780825,dry shampoo,Dry Shampoo Light Tones,2011-12-12,2,534.4140051721268,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091813593,hairstyling,Dry Texture Spray,2011-12-12,2,1084.2469136332543,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091911897,conditioner,Extra Volume Conditioner,2011-12-12,2,1313.0885552075624,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161091977433,shampoo,Extra Volume Shampoo,2011-12-12,2,944.7242777631346,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092731097,shampoo,Hydrating Shampoo,2011-12-12,2,1185.8477186767257,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092763865,conditioner,Hydrating Conditioner,2011-12-12,2,717.8486211104525,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092796633,hairstyling,Hydrating Styling Cream,2011-12-12,2,488.5161062413913,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092862169,hairstyling,Intense Curl Cream,2011-12-12,2,1118.7799745062762,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161092894937,hairmask,Intense Hydrating Mask,2011-12-12,2,854.4733603216991,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093026009,hairstyling,Luminous Hairspray Extra Strong,2011-12-12,2,2147.107200419467,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093058777,hairstyling,Luminous Hairspray Medium,2011-12-12,2,226.93795021800605,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093091545,hairstyling,Luminous Hairspray Strong,2011-12-12,2,177.0233621951779,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093124313,hairstyling,Mending Infusion,2011-12-12,2,1369.8529436734193,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093189849,conditioner,Moisture Repair Conditioner,2011-12-12,2,792.0377656687435,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093222617,hairstyling,Molding Cream,2011-12-12,2,422.52479487974085,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093255385,shampoo,Moisture Repair Shampoo,2011-12-12,2,536.2304855369753,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093288153,treatment,Moroccanoil Treatment Light,2011-12-12,2,327.00135006928065,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093353689,treatment,Moroccanoil Treatment Original,2011-12-12,2,675.6783691287061,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093451993,hairstyling,Perfect Defense Heat Protectant,2011-12-12,2,837.2628940939798,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093517529,hairmask,Platinum Color Depositing Mask,2011-12-12,2,177.6612483040958,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161093583065,hairstyling,Protect & Prevent Spray,2011-12-12,2,690.6039073803406,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094336729,hairmask,Restorative Hair Mask,2011-12-12,2,291.69335724362793,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094369497,hairstyling,Root Boost,2011-12-12,2,350.2518003908167,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094402265,hairmask,Rose Gold Color Depositing Mask,2011-12-12,2,1046.883233151909,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094795481,hairstyling,Smoothing Lotion,2011-12-12,2,2530.5539959001458,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094926553,hairstyling,Styling Gel - Strong,2011-12-12,2,449.60754534001046,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094959321,hairstyling,Texture Clay,2011-12-12,2,371.9224858957356,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161094992089,hairstyling,Thickening Lotion,2011-12-12,2,861.9959312702273,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095090393,hairstyling,Volumizing Mist,2011-12-12,2,827.5974244983053,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095123161,hairstyling,Volumizing Mousse,2011-12-12,2,148.22629281719142,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161095155929,hairmask,Weightless Hydrating Mask,2011-12-12,2,416.5396291234094,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8161115275481,hairstyling,Leave-in Conditioner,2011-12-12,2,556.3338649383419,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8173172064473,hairmask,High Shine Gloss Mask,2011-12-12,2,568.4636679782344,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8210592465113,shampoo,Curl Enhancing Shampoo,2011-12-12,2,359.12738757818255,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8229545836761,hairstyling,Frizz Shield Spray,2011-12-12,2,668.1582899227908,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513169162457,shampoo,Frizz Control Shampoo,2011-12-12,2,2013.686842208488,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8513170997465,conditioner,Frizz Control Conditioner,2011-12-12,2,78.58956201277954,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8672695582937,treatment,Moroccanoil Treatment Purple,2011-12-12,2,842.4930618385843,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957889020121,shampoo,Purifying Pre-Wash Scalp Scrub,2011-12-12,2,370.29537796947227,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957916152025,shampoo,Scalp Balancing Shampoo,2011-12-12,2,611.0201400649896,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+8957917987033,conditioner,Scalp Balancing Conditioner,2011-12-12,2,477.255921373422,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9217377763545,hairstyling,Texture & Volume Hair Powder,2011-12-12,2,283.071927802784,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9280645595353,treatment,Moroccanoil Treatment Mist,2011-12-12,2,755.1599749969255,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9719292690649,hairstyling,Sculpting Pomade,2011-12-12,2,390.5906215520369,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
+9820045770969,hairmask,Overnight Leave-in Mask,2011-12-12,2,158.74892187172432,weekly,revenue_gbp,baseline,Rolling mean|total|raw,20261107_223206_481643,2011-12-09,GBP,True
