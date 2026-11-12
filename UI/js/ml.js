@@ -81,8 +81,8 @@
     let frequency='weekly',target='revenue_gbp',category='';
     try {
       status=await api('ml/status');if(disposed)return;
-      root.innerHTML=`<div class="view ml-view">${heading('Revenue forecast','', '<button type="button" aria-label="Toggle light and dark mode" title="Toggle light and dark mode" class="btn gh theme-toggle"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M20 13a8 8 0 0 1-9-9 8 8 0 1 0 9 9Z"></path></svg></button><button class="btn" data-ml="inference">Refresh forecast</button>')}
-        <div class="ml-job" role="status" aria-live="polite" hidden></div>
+      root.innerHTML=`<div class="view ml-view">${heading('Revenue forecast','', '<button type="button" aria-label="Toggle light and dark mode" title="Toggle light and dark mode" class="btn gh theme-toggle"><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M20 13a8 8 0 0 1-9-9 8 8 0 1 0 9 9Z"></path></svg></button><button type="button" class="btn gh" data-ml="train">Retrain models</button><button type="button" class="btn" data-ml="inference">Refresh forecast</button>')}
+        <div class="ml-job" hidden><div role="status"></div><div data-retrain-evaluation></div></div>
         <div class="card ml-section"><div class="ml-controls"><label>Frequency<select aria-label="Forecast frequency"><option value="weekly">Weekly · 12 weeks</option><option value="monthly">Monthly · 3 months</option></select></label><label>Measure<select aria-label="Forecast measure"><option value="revenue_gbp">Revenue · GBP</option><option value="quantity_sold">Quantity · units</option></select></label><label>Category<select aria-label="Forecast category"><option value="">All categories</option>${Object.entries(status.categories).map(([key,name])=>`<option value="${esc(key)}">${esc(name)}</option>`).join('')}</select></label><a class="btn gh" data-export href="/api/ml/export">Export CSV</a></div><div class="ml-results" aria-live="polite"></div></div>
         <div class="card ml-section"><h3>Restock recommendations <em>Suggested quantities based on demand and available stock</em></h3><div class="ml-controls"><label>Search products<input type="search" aria-label="Search products" placeholder="Name or SKU"></label><label>Category<select aria-label="Restock category"><option value="">All categories</option>${Object.entries(status.categories).map(([key,name])=>`<option value="${esc(key)}">${esc(name)}</option>`).join('')}</select></label><label class="ml-checkbox"><input type="checkbox" aria-label="Needs action only" checked>Needs action only</label><span class="muted" data-stock-count></span></div><div class="tw ml-stock"></div><div class="ml-pager"></div></div>
 
@@ -95,9 +95,9 @@
       qs('[aria-label="Needs action only"]').onchange=()=>{stockPage=1;drawStock();};
       root.addEventListener('click',onClick);
       cleanup=()=>{disposed=true;clearTimeout(timer);root.removeEventListener('click',onClick);};
-      await Promise.all([updateForecast(),updateStock().catch(error=>{if(!disposed)qs('.ml-stock').innerHTML=`<p class="local-message" role="alert">${esc(error.message)}</p>`;})]);
       updateJob();
       if(status.job?.status==='running')pollJob();
+      await Promise.all([updateForecast(),updateStock().catch(error=>{if(!disposed)qs('.ml-stock').innerHTML=`<p class="local-message" role="alert">${esc(error.message)}</p>`;})]);
     } catch(error) {if(!disposed)failure(root,error,()=>mountForecast(root,helpers));}
 
     async function updateForecast() {
@@ -124,28 +124,50 @@
       qs('.ml-stock').innerHTML=`<table><thead><tr><th>SKU / Product</th><th>Forecast demand</th><th>Safety</th><th>Available</th><th>Incoming</th><th>Suggested</th><th>Actions</th></tr></thead><tbody>${rows.slice((stockPage-1)*15,stockPage*15).map(r=>`<tr><td class="wrap"><b>${esc(r.sku)}</b><br>${esc(r.name)}<br><small class="muted">${esc(r.size)} · ${esc(catName(r.category))}</small></td><td>${fmt(r.forecast,2)}</td><td>${r.safety_stock}</td><td>${r.available}</td><td>${r.incoming}</td><td><span class="b ${r.suggested?'w':'g'}">${fmt(r.suggested)}</span></td><td><div class="ml-row-actions"><button class="btn sm" data-ml="order" data-product="${r.product_id}">Order Stock</button><button class="btn sm gh" data-ml="receive" data-product="${r.product_id}" ${r.incoming?'':'disabled'}>Receive Stock</button></div></td></tr>`).join('')||'<tr><td colspan="7" class="local-empty">No matching products. Change the search or filters.</td></tr>'}</tbody></table>`;
     }
     function updateJob() {
-      const job=status.job,busy=job?.status==='running';
-      qs('.ml-job').hidden=!busy;
-      qs('.ml-job').textContent=busy?'Updating forecast… You can continue managing your store.':'';
-      qs('.ml-job').classList.toggle('ml-error',job?.status==='failed');
+      const job=status.job,busy=job?.status==='running',retrain=job?.action==='train';
+      const panel=qs('.ml-job');
+      panel.hidden=!busy&&!retrain;
+      panel.querySelector('[role="status"]').textContent=retrain?job.message
+        :busy?'Updating forecast… You can continue managing your store.':'';
+      panel.classList.toggle('ml-error',job?.status==='failed'||job?.status==='rejected');
       root.querySelectorAll('[data-ml="train"],[data-ml="inference"]').forEach(b=>b.disabled=busy);
+      const evaluation=job?.evaluation||[];
+      const columns=[['wape_pct','WAPE (%)'],['mae','MAE'],['rmse','RMSE']];
+      const show=value=>value==null?'—':fmt(value,2);
+      panel.querySelector('[data-retrain-evaluation]').innerHTML=evaluation.length?`<details><summary>Evaluation results · Current → Retrained</summary>
+        <div class="tw"><table><thead><tr><th scope="col">Forecast / Test dates</th><th scope="col">Level</th>${columns.map(([,label])=>`<th scope="col">${label}</th>`).join('')}<th scope="col">Decision</th></tr></thead>
+        ${evaluation.map(row=>'<tbody>'+['total','sku'].map((level,i)=>`<tr>${i?'':`<th scope="rowgroup" rowspan="2">${esc(row.frequency)} · ${row.target==='revenue_gbp'?'Revenue (GBP)':'Quantity (units)'}<br>${esc(row.start)} to ${esc(row.end)}</th>`}<td>${level==='total'?'Total':'SKU'}</td>
+        ${columns.map(([key])=>{const metric=level+'_'+key;return `<td>${show(row.incumbent[metric])} → ${show(row.candidate[metric])}</td>`;}).join('')}
+        ${i?'':`<td rowspan="2">${row.passed?'Passed':'Failed'}</td>`}</tr>`).join('')+'</tbody>').join('')}</table></div></details>`:'';
     }
     function pollJob() {
       clearTimeout(timer);timer=setTimeout(async()=>{
         if(disposed)return;
         try {
           status=await api('ml/status');if(disposed)return;updateJob();
-          if(status.job?.status==='running')pollJob();
-          else {helpers.toast(status.job?.status==='failed'?'Could not refresh forecast. Please try again.':'Forecast updated.');await Promise.all([updateForecast(),updateStock()]);}
-        }catch(error){if(!disposed){qs('.ml-job').hidden=false;qs('.ml-job').textContent='Unable to check progress. Retrying…';timer=setTimeout(pollJob,3000);}}
+          if(status.job?.status==='running'){pollJob();return;}
+          if(status.job?.action==='inference'){
+            helpers.toast(status.job.status==='failed'?'Could not refresh forecast. Please try again.':'Forecast updated.');
+          }
+          if(status.job?.status==='completed'||status.job?.action==='inference'){
+            await Promise.all([updateForecast(),updateStock().catch(error=>{
+              if(!disposed)qs('.ml-stock').innerHTML=`<p class="local-message" role="alert">${esc(error.message)}</p>`;
+            })]);
+          }
+        }catch(error){if(!disposed){qs('.ml-job').hidden=false;qs('.ml-job [role="status"]').textContent='Unable to check progress. Retrying…';timer=setTimeout(pollJob,3000);}}
       },2000);
     }
     function onClick(event) {
       const button=event.target.closest('[data-ml]');if(!button||button.disabled)return;
       event.stopPropagation();const action=button.dataset.ml;
       if(action==='prev'||action==='next'){stockPage+=action==='next'?1:-1;drawStock();return;}
-      if(action==='inference') {
-        helpers.openModal('Refresh forecast','<p>Update forecasts and stock suggestions using the latest available sales history. This may take a few moments.</p>','Refresh forecast',async()=>{
+      if(action==='inference'||action==='train') {
+        const retrain=action==='train';
+        const title=retrain?'Retrain models':'Refresh forecast';
+        const description=retrain
+          ?'<p>Train Ridge and CatBoost on MySQL sales. The new models are published only if WAPE is at most 100%, no error increases and at least one improves for each forecast series on the latest complete test periods.</p>'
+          :'<p>Update forecasts and stock suggestions using the latest available sales history. This may take a few moments.</p>';
+        helpers.openModal(title,description,title,async()=>{
           const confirm=document.querySelector('[data-confirm]');confirm.disabled=true;
           try{const result=await api('ml/jobs',{action});helpers.closeModal();if(disposed)return;status.job=result.job;updateJob();pollJob();}
           catch(error){helpers.modalError(error.message);confirm.disabled=false;}

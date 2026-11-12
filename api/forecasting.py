@@ -9,18 +9,33 @@ from api.business import BusinessError,recommended_order
 
 ROOT=Path(__file__).resolve().parents[1]
 
-def active_folder():
-    path=ROOT/'Models/active_plan_a.json'
-    if not path.exists(): raise BusinessError('No validated Plan A package. Run Models/research.py first.',409)
-    entry=json.loads(path.read_text(encoding='utf-8'))
-    folder=(ROOT/entry['path']).resolve()
-    if not folder.is_relative_to((ROOT/'Models/results').resolve()): raise BusinessError('Invalid model manifest',409)
+def latest_forecast(store, *, for_update=False):
+    lock = ' FOR UPDATE' if for_update else ''
+    key = store.one('SELECT run_id FROM Forecast_Run ORDER BY created_at DESC,run_id DESC LIMIT 1' + lock)
+    return store.one('SELECT * FROM Forecast_Run WHERE run_id=%s' + lock, (key['run_id'],)) if key else None
+
+
+def active_folder(latest=None):
+    metadata = json.loads(latest['metadata_json']) if latest else {}
+    if metadata.get('profile') == 'mysql-admin-retrain':
+        entry = {'path': metadata['model_relative_path']}
+        allowed = ROOT / 'runtime' / 'retrain'
+    else:
+        path = ROOT / 'Models' / 'active_plan_a.json'
+        if not path.exists():
+            raise BusinessError('No validated Plan A package. Run Models/research.py first.', 409)
+        entry = json.loads(path.read_text(encoding='utf-8'))
+        allowed = ROOT / 'Models' / 'results'
+    folder = (ROOT / entry['path']).resolve()
+    if not folder.is_relative_to(allowed.resolve()):
+        raise BusinessError('Invalid model manifest', 409)
     for name in ('package.pkl','metadata.json','scores.csv','origin_scores.csv','forecasts.csv','predictions.csv'):
         if not (folder/name).is_file(): raise BusinessError(f'Model run is incomplete: missing {name}',409)
     return folder
 
 def report(store=None):
-    folder=active_folder()
+    latest = latest_forecast(store) if store else None
+    folder = active_folder(latest)
     result={'metadata':json.loads((folder/'metadata.json').read_text(encoding='utf-8'))}
     for name in ('scores','origin_scores','forecasts'):
         frame=pd.read_csv(folder/f'{name}.csv')
@@ -28,19 +43,16 @@ def report(store=None):
     actual=pd.read_csv(folder/'predictions.csv')
     grouped=actual.groupby(['frequency','target','model','partition','origin','period','horizon'],as_index=False)[['actual','forecast']].sum()
     result['backtest']=json.loads(grouped.to_json(orient='records'))
-    extension=analysis_folder()
+    extension = None if result['metadata'].get('profile') == 'mysql-admin-retrain' else analysis_folder()
     if extension:
         result['forecasts']=json.loads(pd.read_csv(extension/'forecasts.csv').to_json(orient='records'))
         result['horizon_scores']=json.loads(pd.read_csv(extension/'horizon_scores.csv').to_json(orient='records'))
         result['extension']=json.loads((extension/'metadata.json').read_text(encoding='utf-8'))
-    if store:
-        latest_key=store.one('SELECT run_id FROM Forecast_Run ORDER BY created_at DESC,run_id DESC LIMIT 1')
-        latest=store.one('SELECT * FROM Forecast_Run WHERE run_id=%s',(latest_key['run_id'],)) if latest_key else None
-        if latest:
-            metadata=json.loads(latest['metadata_json'])
-            if metadata['run_id']==result['metadata']['run_id'] and metadata.get('projection_horizons')=={'monthly':3,'weekly':12}:
-                result['forecasts']=json.loads(latest['predictions_json'])
-                result['inference_run_id']=latest['run_id']
+    if latest:
+        metadata = json.loads(latest['metadata_json'])
+        if metadata['run_id'] == result['metadata']['run_id'] and metadata.get('projection_horizons') == {'monthly': 3, 'weekly': 12}:
+            result['forecasts'] = json.loads(latest['predictions_json'])
+            result['inference_run_id'] = latest['run_id']
     return result
 
 def analysis_folder():
@@ -78,9 +90,17 @@ def database_fingerprint(daily):
     return hashlib.sha256(canonical.encode()).hexdigest()
 
 
-def run_inference(store,folder=None):
+def run_inference(store, folder=None, *, expected_incumbent=None, expected_fingerprint=None):
     from Models.research import inference
-    folder=folder or active_folder()
+    # Keep the write lock through commit or rollback. The owning connection closes
+    # at the end of transaction(), releasing the MySQL named lock.
+    lock = store.one("SELECT GET_LOCK(SHA2(CONCAT(DATABASE(), ':folmare_forecasts'), 256), 10) AS acquired")
+    if lock['acquired'] != 1:
+        raise BusinessError('A forecast publish is already in progress. Try again.', 409)
+    current = active_folder(latest_forecast(store, for_update=True))
+    if expected_incumbent is not None and current != expected_incumbent:
+        raise BusinessError('The active model changed during retraining. Run retrain again.', 409)
+    folder = folder or current
     try:
         with (folder/'package.pkl').open('rb') as f: package=pickle.load(f)
     except Exception as error:
@@ -93,11 +113,14 @@ def run_inference(store,folder=None):
     if scores is None:
         raise BusinessError('Validated model metrics are not registered. Retrain from MySQL before inference; CSV fallback is disabled.',409)
     daily=database_daily(store)
+    fingerprint = database_fingerprint(daily)
+    if expected_fingerprint is not None and fingerprint != expected_fingerprint:
+        raise BusinessError('Daily_Sales changed during retraining. Run retrain again.', 409)
     try:
         frame=inference(package,daily,{'monthly':3,'weekly':12})
     except (ValueError,KeyError,TypeError) as error:
         raise BusinessError(f'Model input is incompatible: {error}',409) from error
-    run_id='inference_'+datetime.now().strftime('%Y%m%d_%H%M%S')+'_'+uuid4().hex[:8]
+    run_id='inference_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')+'_'+uuid4().hex[:8]
     frame['inference_run_id']=run_id
     settings={r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')}
     lead=int(float(settings.get('lead_time_days',7))); review=int(float(settings.get('review_period_days',30))); safety=float(settings.get('safety_stock',15))
@@ -119,7 +142,7 @@ def run_inference(store,folder=None):
     records=json.loads(frame.to_json(orient='records',date_format='iso'))
     metadata={**package['metadata'],'projection_horizons':{'monthly':3,'weekly':12},
         'source':'mysql:Daily_Sales','data_cutoff':str(daily.sale_date.max().date()),
-        'source_sha256':database_fingerprint(daily),
+        'source_sha256':fingerprint,
         'database':store.one('SELECT DATABASE() AS name')['name'],
         'source_rows':len(daily),'source_products':int(daily.product_id.nunique()),
         'scores':scores,

@@ -211,12 +211,15 @@ def test_changed_daily_sales_rejects_stale_results_and_uses_new_sql_input(client
         engine.start_job('inference');wait_job(engine)
 
 
-def test_failed_training_keeps_active_model_and_database_results(app,monkeypatch):
-    from Models import research
+def test_failed_training_keeps_active_model_and_database_results(app,client,monkeypatch):
+    from Models import retrain
     engine=app.extensions['ml_engine'];before=engine.status()
     def failed(*a,**kw):raise RuntimeError('deliberate test failure')
-    monkeypatch.setattr(research,'train',failed)
-    engine.start_job('train');deadline=time.monotonic()+10
+    monkeypatch.setattr(retrain,'train',failed)
+    assert client.post('/api/ml/jobs',json={'action':'train'}).status_code==403
+    response=post(client,'/api/ml/jobs',{'action':'train'})
+    assert response.status_code==202 and response.json['job']['action']=='train'
+    deadline=time.monotonic()+10
     while engine.job['status']=='running' and time.monotonic()<deadline:time.sleep(.05)
     assert engine.job['status']=='failed'
     after=engine.status();assert after['metadata']['run_id']==before['metadata']['run_id']

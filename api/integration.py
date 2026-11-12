@@ -21,7 +21,7 @@ from flask import Flask, jsonify, request, session, send_from_directory, redirec
 from mysql.connector import Error as MySQLError
 from api.business import BusinessError
 from api.store import transaction, Store
-from api.forecasting import active_folder, database_daily, database_fingerprint, run_inference
+from api.forecasting import active_folder, database_daily, database_fingerprint, latest_forecast, run_inference
 from api.analytics import historical_data
 from connector.connector import Connector
 from api.app import app as source_app, JSONProvider
@@ -56,9 +56,8 @@ class Engine:
             fingerprint=database_fingerprint(daily)
             catalog=store.products(True)
             settings={r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')}
-            latest_key=store.one('SELECT run_id FROM Forecast_Run ORDER BY created_at DESC,run_id DESC LIMIT 1')
-            latest=store.one('SELECT * FROM Forecast_Run WHERE run_id=%s',(latest_key['run_id'],)) if latest_key else None
-            model=json.loads((active_folder()/'metadata.json').read_text())
+            latest = latest_forecast(store)
+            model = json.loads((active_folder(latest) / 'metadata.json').read_text())
             if latest:
                 metadata=decode(latest['metadata_json'])
                 frame=pd.DataFrame(decode(latest['predictions_json']))
@@ -163,38 +162,44 @@ class Engine:
             if self.job and self.job['status']=='running':raise BusinessError('A model job is already running',409)
             # Verify DB access before claiming the job was accepted.
             with transaction() as store:database_daily(store)
-            self.job=dict(id=uuid.uuid4().hex,action=action,status='running',started_at=datetime.now(timezone.utc).isoformat(),message='Updating forecasts from MySQL…')
+            self.job=dict(id=uuid.uuid4().hex,action=action,status='running',started_at=datetime.now(timezone.utc).isoformat(),message='Training Ridge and CatBoost from MySQL…' if action=='train' else 'Updating forecasts from MySQL…')
             threading.Thread(target=self.work,args=(action,),daemon=True).start()
             return dict(self.job)
 
-    def work(self,action):
+    def work(self, action):
         try:
-            if action=='inference':
-                with self.lock,transaction() as store:result=run_inference(store)
-                message=f'Inference complete: {len(result["forecasts"]):,} MySQL predictions; fitted model, no training.'
+            status = 'completed'
+            evaluation = []
+            if action == 'inference':
+                with self.lock, transaction() as store:
+                    result = run_inference(store)
+                message = f'Inference complete: {len(result["forecasts"]):,} MySQL predictions; fitted model, no training.'
             else:
-                from Models.research import train
-                from scripts.extend_forecasts import extend
-                with transaction() as store:daily=database_daily(store)
-                fingerprint=database_fingerprint(daily)
-                # Train and validate before publishing the active model.
-                folder=train(daily,'mysql:Daily_Sales',activate=False)
-                extension=extend(folder=folder,daily=daily,activate=False)
-                with self.lock:
-                    with transaction() as store:
-                        if database_fingerprint(database_daily(store))!=fingerprint:
-                            raise BusinessError('Daily_Sales changed during training. Candidate not activated; run training again.',409)
-                        result=run_inference(store,folder=folder)
-                    manifests={'active_plan_a.json':dict(run_id=folder.name,path=folder.relative_to(SOURCE).as_posix()),
-                               'active_analysis.json':dict(model_run_id=folder.name,path=extension.relative_to(SOURCE).as_posix())}
-                    for name,value in manifests.items():
-                        temporary=SOURCE/'Models'/(name+'.tmp');temporary.write_text(json.dumps(value,indent=2));temporary.replace(SOURCE/'Models'/name)
-                message=f'Training and validation complete from MySQL. Active run: {folder.name}; {len(result["forecasts"]):,} predictions persisted.'
-            with self.job_lock:self.job.update(status='completed',message=message,completed_at=datetime.now(timezone.utc).isoformat())
+                from Models.retrain import train
+
+                with transaction() as store:
+                    daily = database_daily(store)
+                    incumbent = active_folder(latest_forecast(store))
+                fingerprint = database_fingerprint(daily)
+                folder, evaluation, message = train(daily, incumbent)
+                if folder is None:
+                    status = 'rejected'
+                else:
+                    # The committed Forecast_Run row publishes both the forecast
+                    # and the model reference. A failed write leaves both unchanged.
+                    with self.lock, transaction() as store:
+                        run_inference(store, folder=folder, expected_incumbent=incumbent,
+                                      expected_fingerprint=fingerprint)
+            with self.job_lock:
+                self.job.update(status=status, message=message, evaluation=evaluation,
+                                completed_at=datetime.now(timezone.utc).isoformat())
         except Exception as error:
             import traceback
-            (self.runtime/'last-job-error.log').write_text(traceback.format_exc())
-            with self.job_lock:self.job.update(status='failed',message=f'{type(error).__name__}: {error}',completed_at=datetime.now(timezone.utc).isoformat())
+            message = str(error) if isinstance(error, BusinessError) else 'Could not finish the model job. Please try again.'
+            with self.job_lock:
+                self.job.update(status='failed', message=message,
+                                completed_at=datetime.now(timezone.utc).isoformat())
+            (self.runtime / 'last-job-error.log').write_text(traceback.format_exc())
 
     def diagnostics(self):
         data=self.load()
