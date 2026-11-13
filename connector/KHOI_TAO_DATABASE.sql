@@ -44253,6 +44253,7 @@ INSERT INTO `Settings` (`setting_key`,`setting_value`,`value_type`) VALUES
 ('lead_time_days','7','string'),
 ('review_period_days','30','string'),
 ('safety_stock','15','string'),
+('service_level_pct','95','string'),
 ('low_stock_threshold','20','string');
 INSERT INTO `Voucher` (`code`,`discount_type`,`discount_value`,`minimum_order_amount`,`usage_limit`,`status`) VALUES
 ('WELCOME10','percentage',10,30,500,'active');

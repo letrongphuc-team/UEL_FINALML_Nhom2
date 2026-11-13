@@ -152,7 +152,9 @@ def test_recommendations_use_database_settings_and_model_output(client):
     rows=client.get('/api/ml/recommendations').json['rows']
     with transaction() as store:settings={r['setting_key']:float(r['setting_value']) for r in store.all("SELECT * FROM Settings WHERE setting_key IN ('lead_time_days','review_period_days','safety_stock')")}
     assert rows and all(row['horizon_days']==settings['lead_time_days']+settings['review_period_days'] for row in rows)
-    assert all(row['safety_stock']==settings['safety_stock'] for row in rows)
+    # Fixed setting is the floor; the statistical part is z * per-SKU backtest RMSE.
+    assert all(row['safety_stock']==max(settings['safety_stock'],row['statistical_safety_stock']) for row in rows)
+    assert any(row['statistical_safety_stock']>row['safety_stock_floor'] for row in rows)
     for row in rows:
         import math
         assert row['suggested']==max(0,math.ceil(row['forecast']+row['safety_stock']-row['available']-row['incoming']))
@@ -174,8 +176,11 @@ def test_admin_lists_and_settings_match_sql(client):
     settings=client.get('/api/admin/settings').json['settings'];original=settings['safety_stock']
     try:
         assert post(client,'/api/admin/settings',{'safety_stock':16}).status_code==200
+        assert all(r['safety_stock']==max(16,r['statistical_safety_stock']) for r in client.get('/api/ml/recommendations').json['rows'])
+        assert post(client,'/api/admin/settings',{'service_level_pct':0}).status_code==200
         assert all(r['safety_stock']==16 for r in client.get('/api/ml/recommendations').json['rows'])
-    finally:assert post(client,'/api/admin/settings',{'safety_stock':float(original)}).status_code==200
+        assert post(client,'/api/admin/settings',{'service_level_pct':30}).status_code==400
+    finally:assert post(client,'/api/admin/settings',{'safety_stock':float(original),'service_level_pct':float(settings['service_level_pct'])}).status_code==200
 
 
 def test_repeated_original_module_inference_is_finite_and_stable(app):

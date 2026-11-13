@@ -221,12 +221,14 @@ def resources(store,user,resource):
     data=request.get_json(silent=True) or {}
     if resource=='settings':
         if request.method=='POST':
-            for key in ('shipping_fee','lead_time_days','review_period_days','safety_stock','low_stock_threshold'):
+            for key in ('shipping_fee','lead_time_days','review_period_days','safety_stock','service_level_pct','low_stock_threshold'):
                 if key in data:
                     value=money(data[key])
                     if value<0 or (key!='shipping_fee' and value!=int(value)): raise BusinessError('Settings must be nonnegative; days and stock must be integers')
+                    if key=='service_level_pct' and value!=0 and not 50<=value<=99.9: raise BusinessError('Service level must be 0 (fixed safety stock) or from 50 to 99 percent')
                     store.execute('INSERT INTO Settings (setting_key,setting_value) VALUES (%s,%s) ON DUPLICATE KEY UPDATE setting_value=VALUES(setting_value)',(key,str(value)))
-        return jsonify(settings={r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')})
+        from api.forecasting import DEFAULT_SERVICE_LEVEL_PCT
+        return jsonify(settings={'service_level_pct':str(DEFAULT_SERVICE_LEVEL_PCT),**{r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')}})
     if resource=='vouchers':
         if request.method=='POST':
             if not data.get('code') or data.get('discount_type') not in ('percentage','fixed') or money(data.get('discount_value',0))<=0: raise BusinessError('Valid code, type and positive value required')

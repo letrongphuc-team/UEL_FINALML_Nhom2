@@ -84,6 +84,23 @@ MAE và RMSE ở cấp tổng bằng nhau trong kỳ test tháng vì chỉ có m
 
 Ứng dụng cung cấp dự báo đến mười hai tuần và ba tháng; các chỉ số test nêu trên không đại diện cho toàn bộ horizon dài hạn. Kết quả chẩn đoán theo horizon được lưu trong thư mục `extensions` của mô hình và có phạm vi đánh giá hồi cứu riêng.
 
+### 5.3. Phân tích độ nhạy và chẩn đoán bổ sung
+
+Các phân tích này được tái lập bằng `python -m scripts.sensitivity_analysis` (kết quả ghi vào `runtime/analysis/`). Chúng không thay đổi mô hình đã chọn.
+
+**Độ nhạy theo tham số alpha của RidgeShort (total WAPE, số lượng bán):**
+
+| alpha | Validation | Test 11/2011 |
+|---|---|---|
+| 1 | 18,95% | 0,05% |
+| 10 | 15,55% | 10,31% |
+| 100 (triển khai) | 13,38% | 27,39% |
+| 1000 | 12,65% | 32,25% |
+
+Thứ hạng theo validation và theo test ngược chiều nhau: alpha tốt nhất trên validation lại cho sai số test cao nhất. Với 8 điểm validation và một tháng test, chênh lệch giữa các cấu hình chủ yếu phản ánh độ nhiễu của mẫu đánh giá nhỏ. Mô hình được giữ theo tiêu chí validation đã đóng băng trước test; không chọn lại alpha theo test. Các thử nghiệm giảm số đặc trưng, hiệu chỉnh smearing cho biến đổi log và refit trên toàn bộ dữ liệu khi retrain cũng không cải thiện kết quả một cách nhất quán.
+
+**Dự báo tuần theo horizon (6 mốc hồi cứu, h1–12):** CatBoost triển khai có total WAPE trung bình 20,34% (số lượng) và 21,21% (doanh thu), với độ lệch dương tăng dần theo horizon do sai số tích lũy khi dự báo đệ quy. Kết hợp 50% CatBoost với 50% trung bình 4 tuần của từng sản phẩm cho 18,57% và 17,75%, độ lệch gần 0, nhưng kém hơn ở validation h1–2 (23,56% so với 20,56%). Phương án kết hợp được đề xuất sau khi đã xem kết quả test và các mốc h1–12 trùng giai đoạn validation, nên chỉ được trình bày như chẩn đoán, không thay thế mô hình triển khai.
+
 ## 6. Đề xuất nhập kho
 
 Số lượng nhập kho được tính từ nhu cầu dự báo trong thời gian chờ hàng và kỳ xem xét tồn kho, cộng tồn kho an toàn, sau đó trừ tồn kho khả dụng và lượng hàng đang về:
@@ -94,7 +111,25 @@ Số lượng đề xuất = max(0, làm tròn lên(Nhu cầu dự báo + Tồn 
                                      − Tồn kho khả dụng − Hàng đang về))
 ```
 
-Các thông số thời gian chờ, kỳ xem xét và tồn kho an toàn được đọc từ cấu hình MySQL. Chức năng ghi nhận nhập hàng cập nhật tồn kho trong database; quản trị viên kiểm tra đề xuất và thực hiện đặt hàng với nhà cung cấp.
+Tồn kho an toàn được tính theo sai số dự báo của chính mô hình thay vì một hằng số chung:
+
+```text
+σ_SKU            = RMSE của dự báo tháng (số lượng) của sản phẩm trên các kỳ backtest
+Tồn kho an toàn  = max(Tồn kho an toàn tối thiểu, z × σ_SKU × √((Lead time + Review period) / Số ngày trong tháng))
+z                = phân vị chuẩn của mức phục vụ mục tiêu (mặc định 95% → z ≈ 1,645)
+```
+
+Backtest trên 6 tháng × 59 sản phẩm (σ chỉ lấy từ các kỳ trước tháng được đánh giá):
+
+| Chính sách | Tồn kho an toàn TB/SKU | Tỷ lệ kỳ không thiếu hàng | Fill rate |
+|---|---|---|---|
+| Hằng số 15 đơn vị (trước đây) | 15 | 54,8% | 80,2% |
+| max(15, z·σ), mục tiêu 95% | 843 | 88,1% | 94,1% |
+| Hằng số cùng tổng lượng với z·σ | 843 | 92,4% | 93,3% |
+
+Mức 15 đơn vị quá nhỏ so với nhu cầu trung bình khoảng 1.184 đơn vị/sản phẩm/tháng. Giá trị chính của công thức z·σ là gắn tồn kho an toàn với mục tiêu phục vụ và sai số đo được; khi so cùng tổng lượng hàng, phân bổ theo σ từng sản phẩm không vượt trội hằng số vì σ được ước lượng từ ít kỳ. Mức phục vụ thực tế 88% thấp hơn mục tiêu 95% cho thấy σ còn bị ước lượng thấp.
+
+Các thông số thời gian chờ, kỳ xem xét, tồn kho an toàn tối thiểu và mức phục vụ (`service_level_pct`; giá trị 0 chỉ dùng tồn kho an toàn cố định) được đọc từ cấu hình MySQL. σ của từng sản phẩm được lưu cùng lần inference trong bảng `Forecast_Run`. Chức năng ghi nhận nhập hàng cập nhật tồn kho trong database; quản trị viên kiểm tra đề xuất và thực hiện đặt hàng với nhà cung cấp.
 
 ## 7. Tích hợp và kiểm thử
 
@@ -108,4 +143,4 @@ Các kiểm thử ghi dữ liệu sử dụng schema kiểm thử riêng. Hướ
 
 Dữ liệu có thời gian quan sát hạn chế và nhãn sản phẩm HairCare được ánh xạ phục vụ học tập. Kết quả không chứng minh khả năng dự báo thị trường HairCare hiện tại. Sai số doanh thu tháng và sai số ở cấp sản phẩm còn đáng kể; các đề xuất nhập kho cần được quản trị viên xem xét theo điều kiện kinh doanh.
 
-Tập test hồi cứu có số kỳ nhỏ và đã tham gia bước chấp nhận triển khai. Đề tài không khẳng định ưu thế thống kê hoặc khoảng dự báo đã được hiệu chỉnh. Hướng phát triển gồm bổ sung dữ liệu bán hàng thực tế, đánh giá trên giai đoạn mới, kiểm tra sai số theo nhóm sản phẩm và hiệu chỉnh tồn kho an toàn dựa trên biến động nhu cầu.
+Tập test hồi cứu có số kỳ nhỏ và đã tham gia bước chấp nhận triển khai. Đề tài không khẳng định ưu thế thống kê hoặc khoảng dự báo đã được hiệu chỉnh. Hướng phát triển gồm bổ sung dữ liệu bán hàng thực tế, đánh giá trên giai đoạn mới, kiểm tra sai số theo nhóm sản phẩm và ước lượng σ ổn định hơn khi có thêm kỳ backtest, và đưa tiêu chí sai số nhiều horizon vào bước chọn mô hình trước khi xem dữ liệu test mới.

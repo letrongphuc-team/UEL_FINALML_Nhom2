@@ -33,6 +33,15 @@ class Store:
         finally:
             cursor.close()
 
+    def execute_many(self, sql, rows):
+        if not rows:
+            return
+        cursor = self.conn.cursor()
+        try:
+            cursor.executemany(sql, rows)
+        finally:
+            cursor.close()
+
     def products(self, admin=False):
         return self.all('''SELECT p.*, pv.variant_id, pv.sku_code, pv.variant_name,
             pv.size, pv.price, pv.currency, pv.on_hand, pv.reserved, pv.incoming, pv.is_active

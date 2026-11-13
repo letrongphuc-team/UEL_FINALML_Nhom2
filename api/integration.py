@@ -21,12 +21,17 @@ from flask import Flask, jsonify, request, session, send_from_directory, redirec
 from mysql.connector import Error as MySQLError
 from api.business import BusinessError
 from api.store import transaction, Store
-from api.forecasting import active_folder, database_daily, database_fingerprint, latest_forecast, run_inference
+from api.forecasting import (active_folder, database_daily, database_fingerprint, inventory_policy, latest_forecast,
+                             order_plan, run_inference, sku_error_sigma)
 from api.analytics import historical_data
 from connector.connector import Connector
 from api.app import app as source_app, JSONProvider
 
 SOURCE=Path(inspect.getfile(Connector)).resolve().parents[1]
+# Cheap change detector for the exact rows (and catalog labels) that database_daily() reads.
+SALES_SIGNATURE_SQL="""SELECT COUNT(*) AS n,COALESCE(SUM(CRC32(x)),0) AS crc_sum,COALESCE(BIT_XOR(CRC32(x)),0) AS crc_xor
+    FROM (SELECT CONCAT_WS('|',s.product_id,s.sale_date,s.quantity_sold,s.revenue,p.category,p.name) AS x
+          FROM Daily_Sales s JOIN Product p ON p.product_id=s.product_id WHERE s.is_simulated=1) rows_"""
 CATEGORIES={'shampoo':'Shampoo','conditioner':'Conditioner','hairmask':'Hair Masks',
             'treatment':'Treatment / Oil','hairstyling':'Styling & Finishing','dry shampoo':'Dry Shampoo'}
 
@@ -46,35 +51,50 @@ class Engine:
         self.lock=threading.RLock()
         self.job_lock=threading.RLock()
         self.job=None
-        self.history_cache=None
+        self.sales_cache=None
+        self.forecast_cache=None
+        self.sigma_cache={}
 
     def load(self):
-        # Always reach MySQL, even when derived history is cached in memory.
+        # Always reach MySQL. A server-side checksum of the sales rows decides whether
+        # the full table must be transferred, hashed and summarised again.
         with self.lock,transaction() as store:
             identity=store.one('SELECT DATABASE() AS name,VERSION() AS version')
-            daily=database_daily(store)
-            fingerprint=database_fingerprint(daily)
+            key=(identity['name'],tuple(str(value) for value in store.one(SALES_SIGNATURE_SQL).values()))
+            if not self.sales_cache or self.sales_cache[0]!=key:
+                daily=database_daily(store)
+                fingerprint=database_fingerprint(daily)
+                self.sales_cache=(key,daily,fingerprint,historical_data(daily,'MySQL '+identity['name']+'.Daily_Sales'))
+            _,daily,fingerprint,history=self.sales_cache
             catalog=store.products(True)
             settings={r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')}
-            latest = latest_forecast(store)
-            model = json.loads((active_folder(latest) / 'metadata.json').read_text())
+            latest=store.one('SELECT run_id,created_at,metadata_json FROM Forecast_Run ORDER BY created_at DESC,run_id DESC LIMIT 1')
+            folder=active_folder(latest)
+            model = json.loads((folder / 'metadata.json').read_text())
             if latest:
-                metadata=decode(latest['metadata_json'])
-                frame=pd.DataFrame(decode(latest['predictions_json']))
-                if not frame.empty:
-                    frame['product_id']=frame.product_id.astype(str)
-                    frame['period']=pd.to_datetime(frame.period).dt.strftime('%Y-%m-%d')
+                if not self.forecast_cache or self.forecast_cache[0]!=latest['run_id']:
+                    stored=store.one('SELECT predictions_json FROM Forecast_Run WHERE run_id=%s',(latest['run_id'],))
+                    frame=pd.DataFrame(decode(stored['predictions_json']))
+                    if not frame.empty:
+                        frame['product_id']=frame.product_id.astype(str)
+                        frame['period']=pd.to_datetime(frame.period).dt.strftime('%Y-%m-%d')
+                    self.forecast_cache=(latest['run_id'],decode(latest['metadata_json']),frame)
+                _,metadata,frame=self.forecast_cache
                 stale=(metadata.get('source_sha256')!=fingerprint or metadata.get('database')!=identity['name']
                        or metadata.get('run_id')!=model['run_id'])
             else:
                 metadata=model;frame=pd.DataFrame();stale=True
-            if not self.history_cache or self.history_cache[0]!=fingerprint:
-                self.history_cache=(fingerprint,historical_data(daily,'MySQL '+identity['name']+'.Daily_Sales'))
             flags=store.one('SELECT COUNT(*) AS rows_total,SUM(is_simulated=1) AS mapped_rows FROM Daily_Sales')
-        return dict(daily=daily,history=self.history_cache[1],catalog=catalog,metadata=metadata,
+        return dict(daily=daily,history=history,catalog=catalog,metadata=metadata,folder=folder,
                     forecasts=frame,source_sha256=fingerprint,database=identity,settings=settings,
                     inference_run_id=latest['run_id'] if latest else None,
                     generated_at=latest['created_at'] if latest else None,stale=stale,source_flags=flags)
+
+    def sigma(self,folder,champion):
+        key=(str(folder),champion)
+        if key not in self.sigma_cache:
+            self.sigma_cache[key]=sku_error_sigma(folder,champion)
+        return self.sigma_cache[key]
 
     def status(self):
         data=self.load();history=data['history'];model_products=data['daily'].product_id.nunique()
@@ -121,8 +141,10 @@ class Engine:
         frame=data['forecasts']
         monthly=frame[(frame.frequency=='monthly')&(frame.target=='quantity_sold')&(frame.role=='champion')]
         first=monthly[monthly.horizon==1].set_index('product_id')
-        settings=data['settings']
-        lead=int(float(settings['lead_time_days']));review=int(float(settings['review_period_days']));safety=float(settings['safety_stock'])
+        policy=inventory_policy(data['settings'])
+        # Stored with the published run in MySQL; older runs fall back to the model artifact.
+        sigma=data['metadata'].get('sku_error_sigma') or self.sigma(
+            data['folder'],data['metadata']['selections']['monthly:quantity_sold']['champion'])
         rows=[];seen=set()
         for product in data['catalog']:
             key=str(product['product_id'])
@@ -131,13 +153,16 @@ class Engine:
             seen.add(key)
             forecast=first.loc[key]
             period=pd.Timestamp(forecast.period)
-            demand=float(forecast.forecast)*(lead+review)/period.days_in_month
-            available=product['on_hand']-product['reserved']
+            plan=order_plan(forecast.forecast,period.days_in_month,sigma.get(key),policy,
+                            product['on_hand'],product['reserved'],product['incoming'])
             rows.append(dict(product_id=key,variant_id=product['variant_id'],sku=product['sku_code'],name=product['name'],
-                             size=product['size'],category=product['category'],forecast=demand,safety_stock=safety,
-                             **{k:product[k] for k in ('on_hand','reserved','incoming')},available=available,
-                             suggested=max(0,math.ceil(demand+safety-available-product['incoming'])),
-                             lead_time_days=lead,review_period_days=review,horizon_days=lead+review))
+                             size=product['size'],category=product['category'],forecast=plan['demand'],
+                             safety_stock=plan['safety_stock'],safety_stock_floor=policy['floor'],
+                             statistical_safety_stock=plan['statistical_safety_stock'],forecast_sigma=sigma.get(key),
+                             service_level_pct=policy['service_level_pct'],
+                             **{k:product[k] for k in ('on_hand','reserved','incoming')},available=plan['available'],
+                             suggested=plan['suggested'],lead_time_days=policy['lead'],review_period_days=policy['review'],
+                             horizon_days=policy['lead']+policy['review']))
         if len(seen)!=len(first):raise BusinessError('A forecast product is missing from Product_Variant',409)
         return sorted(rows,key=lambda row:(-row['suggested'],row['sku']))
 

@@ -9,7 +9,7 @@ const base='http://127.0.0.1:4189',checks=[],errors=[];
 const check=(name,value=true)=>{assert.ok(value,name);checks.push(name);console.log('PASS '+name);};
 let server,browser;
 try{
-  server=spawn(resolve('.venv/bin/python'),['-B','Tests/browser_server.py'],{env:process.env,stdio:'ignore'});
+  server=spawn(resolve(process.platform==='win32'?'.venv/Scripts/python.exe':'.venv/bin/python'),['-B','Tests/browser_server.py'],{env:process.env,stdio:'ignore'});
   let ready=false;
   for(let i=0;i<120;i++){try{if((await fetch(base+'/api/session')).ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,500));}
   assert.ok(ready,'SQL clone UI server did not start');
@@ -19,8 +19,8 @@ try{
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto(base+'/#/admin/forecast');await page.locator('input[type=email]').waitFor();
   check('Unauthenticated forecast requires database sign in',page.url().includes('/admin/login'));
-  await page.locator('input[type=email]').fill('admin@haircare.vn');await page.locator('input[type=password]').fill('admin123');await page.locator('form button').click();await page.getByRole('alert').waitFor();check('Old frontend-only account is rejected');
-  await page.locator('input[type=email]').fill('manager@haircare.local');await page.locator('input[type=password]').fill('DemoAdmin123!');await page.locator('form button').click();
+  await page.locator('input[type=email]').fill('admin@haircare.vn');await page.locator('input[type=password]').fill('admin123');await page.locator('form button[type=submit]').click();await page.getByRole('alert').waitFor();check('Old frontend-only account is rejected');
+  await page.locator('input[type=email]').fill('manager@haircare.local');await page.locator('input[type=password]').fill('DemoAdmin123!');await page.locator('form button[type=submit]').click();
   await page.locator('.ml-stock tbody tr').first().waitFor({timeout:60000});
   const status=await (await context.request.get(base+'/api/ml/status')).json();
   check('Using an isolated real MySQL database',status.database.name.startsWith('folmare_ui_')&&status.source==='mysql:Daily_Sales');
@@ -60,7 +60,7 @@ try{
   check('Stock receipt survives reload',Number(await row.locator('td').nth(4).innerText())===Number(before[4])+2);
   await page.getByRole('link',{name:'Settings',exact:true}).click();await page.locator('[data-settings-form]').waitFor();await page.locator('input[name=safety_stock]').fill('16');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.getByText('Settings saved.',{exact:true}).waitFor();
   check('Settings saved to MySQL',Number((await (await context.request.get(base+'/api/admin/settings')).json()).settings.safety_stock)===16);
-  await page.getByRole('link',{name:'Revenue forecast',exact:true}).click();await page.locator('.ml-stock tbody tr').first().waitFor({timeout:30000});check('Forecast reads the same SQL Settings',await page.locator('.ml-stock tbody tr td:nth-child(3)').allInnerTexts().then(c=>c.every(v=>v==='16')));
+  await page.getByRole('link',{name:'Revenue forecast',exact:true}).click();await page.locator('.ml-stock tbody tr').first().waitFor({timeout:30000});check('Forecast reads the same SQL Settings',(await (await context.request.get(base+'/api/ml/recommendations')).json()).rows.every(r=>r.safety_stock_floor===16&&r.safety_stock>=16));
   await page.screenshot({path:resolve(output,'mysql-forecast-desktop.png'),fullPage:false});
   for(const viewport of [{width:390,height:844},{width:768,height:1024},{width:844,height:390}]){await page.setViewportSize(viewport);check('No outer overflow '+viewport.width,await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
   await page.setViewportSize({width:390,height:844});await page.screenshot({path:resolve(output,'mysql-forecast-mobile.png'),fullPage:false});

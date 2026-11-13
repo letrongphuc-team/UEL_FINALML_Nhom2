@@ -86,6 +86,9 @@ def test_accepted_package_is_used_after_sql_publish(tmp_path, monkeypatch, origi
         def all(self, sql):
             if sql == forecasting.DAILY_SQL:
                 return daily.to_dict('records')
+            if 'FROM Product_Variant' in sql:
+                return [dict(variant_id=index, product_id=key, on_hand=0, reserved=0, incoming=0)
+                        for index, key in enumerate(sorted(daily.product_id.unique()), 1)]
             assert sql == 'SELECT * FROM Settings'
             return []
 
@@ -93,6 +96,9 @@ def test_accepted_package_is_used_after_sql_publish(tmp_path, monkeypatch, origi
             if sql.startswith('INSERT INTO Forecast_Run'):
                 self.latest = dict(zip(('run_id', 'metadata_json', 'predictions_json'), params))
             return 1
+
+        def execute_many(self, sql, rows):
+            assert sql.lstrip().startswith('INSERT INTO Inventory_Forecast') and rows
 
     store = ForecastStore()
     with pytest.raises(BusinessError, match='Daily_Sales changed'):

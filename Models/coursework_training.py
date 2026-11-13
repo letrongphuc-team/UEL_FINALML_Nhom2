@@ -42,7 +42,7 @@ def train(daily,source,activate=True):
     started=time.monotonic();run_id=datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     folder=ROOT/'Models/results/plan_a_v3'/run_id;folder.mkdir(parents=True,exist_ok=False)
     reference=json.loads((REFERENCE/'metadata.json').read_text())
-    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False).encode();(folder/'daily_snapshot.csv').write_bytes(canonical)
+    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False,lineterminator='\n').encode();(folder/'daily_snapshot.csv').write_bytes(canonical)
     metadata=dict(run_id=run_id,source=source,profile='coursework-v3-monthly',reference_run=reference['run_id'],
         snapshot_sha256=hashlib.sha256(canonical).hexdigest(),source_sha256=database_fingerprint(daily),
         is_simulated=True,currency='GBP',data_cutoff=str(pd.to_datetime(daily.sale_date).max().date()),

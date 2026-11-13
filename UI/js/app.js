@@ -28,10 +28,10 @@
     $$('a[href^="/admin"]').forEach(e=>e.setAttribute('href','#'+e.getAttribute('href')));
     $$('nav .n').forEach(e=>e.remove());
     if(login){
-      const form=$('form');form.setAttribute('novalidate','');$('input[type=email]').value='';$('input[type=password]').value='';
+      const form=$('form');form.setAttribute('novalidate','');const pwt=$('.pw-toggle'),pwi=$('input[type=password]');if(pwt)pwt.addEventListener('click',()=>{const show=pwi.type==='password';pwi.type=show?'text':'password';pwt.setAttribute('aria-label',show?'Hide password':'Show password');});$('input[type=email]').value='';$('input[type=password]').value='';
       form.addEventListener('submit',async event=>{
         event.preventDefault();const button=$('form button');button.disabled=true;
-        try{const session=await window.FOLMARE_ML.login($('input[type=email]').value.trim(),$('input[type=password]').value);user=session.user;const next=url.searchParams.get('returnUrl');go(next?.startsWith('/admin/')?next:'/admin/dashboard');}
+        try{const session=await window.FOLMARE_ML.login($('#le').value.trim(),$('#lp').value);user=session.user;const next=url.searchParams.get('returnUrl');go(next?.startsWith('/admin/')?next:'/admin/dashboard');}
         catch(error){let alert=$('[role=alert]');if(!alert){alert=document.createElement('p');alert.className='local-message';alert.setAttribute('role','alert');button.before(alert);}alert.textContent=error.message;button.disabled=false;}
       });return;
     }

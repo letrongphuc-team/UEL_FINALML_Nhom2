@@ -3,11 +3,48 @@ from datetime import datetime,timedelta
 from uuid import uuid4
 import json
 import hashlib
+import math
 import pickle
+from statistics import NormalDist
 import pandas as pd
-from api.business import BusinessError,recommended_order
+from api.business import BusinessError
 
 ROOT=Path(__file__).resolve().parents[1]
+DEFAULT_SERVICE_LEVEL_PCT=95
+
+
+def inventory_policy(settings):
+    """Reorder settings. service_level_pct=0 keeps the fixed safety stock only."""
+    service=float(settings.get('service_level_pct',DEFAULT_SERVICE_LEVEL_PCT))
+    return dict(lead=int(float(settings.get('lead_time_days',7))),review=int(float(settings.get('review_period_days',30))),
+                floor=float(settings.get('safety_stock',15)),service_level_pct=service,
+                z=NormalDist().inv_cdf(service/100) if service>0 else 0.0)
+
+
+def sku_error_sigma(folder,champion):
+    """Per-SKU RMSE of the deployed monthly quantity model on its own backtest rows.
+
+    Reads the model's evaluation artifact (like package.pkl), never sales data. The result is
+    stored in Forecast_Run metadata so the admin views read it from MySQL.
+    """
+    import csv
+    squared={}
+    with (folder/'predictions.csv').open(newline='',encoding='utf-8') as file:
+        for row in csv.DictReader(file):
+            if row['frequency']=='monthly' and row['target']=='quantity_sold' and row['model']==champion:
+                squared.setdefault(row['product_id'],[]).append((float(row['actual'])-float(row['forecast']))**2)
+    return {key:math.sqrt(sum(values)/len(values)) for key,values in squared.items()}
+
+
+def order_plan(monthly_forecast,period_days,sigma,policy,on_hand,reserved,incoming):
+    """Demand over lead+review days plus safety stock z*sigma*sqrt(horizon/month), never below the fixed floor."""
+    horizon=policy['lead']+policy['review']
+    demand=float(monthly_forecast)*horizon/period_days
+    statistical=round(policy['z']*float(sigma or 0)*math.sqrt(horizon/period_days),2)
+    safety=max(policy['floor'],statistical)
+    available=on_hand-reserved
+    suggested=max(0,math.ceil(demand+safety-available-incoming))
+    return dict(demand=demand,safety_stock=safety,statistical_safety_stock=statistical,available=available,suggested=suggested)
 
 def latest_forecast(store, *, for_update=False):
     lock = ' FOR UPDATE' if for_update else ''
@@ -86,7 +123,8 @@ def database_daily(store):
 
 
 def database_fingerprint(daily):
-    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False,date_format='%Y-%m-%d',float_format='%.8f')
+    # Fixed '\n' terminator: pandas otherwise uses os.linesep, giving a different hash on Windows.
+    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False,date_format='%Y-%m-%d',float_format='%.8f',lineterminator='\n')
     return hashlib.sha256(canonical.encode()).hexdigest()
 
 
@@ -123,22 +161,32 @@ def run_inference(store, folder=None, *, expected_incumbent=None, expected_finge
     run_id='inference_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f')+'_'+uuid4().hex[:8]
     frame['inference_run_id']=run_id
     settings={r['setting_key']:r['setting_value'] for r in store.all('SELECT * FROM Settings')}
-    lead=int(float(settings.get('lead_time_days',7))); review=int(float(settings.get('review_period_days',30))); safety=float(settings.get('safety_stock',15))
+    policy=inventory_policy(settings)
+    sigma=sku_error_sigma(folder,package['metadata']['selections']['monthly:quantity_sold']['champion'])
+    # One catalog query instead of one query per forecast row; first variant per product as before.
+    variants={}
+    for row in store.all('SELECT * FROM Product_Variant ORDER BY variant_id'):
+        variants.setdefault(str(row['product_id']),row)
+    first_month=frame.loc[frame.frequency=='monthly','period'].min()
+    cutoff=str(daily.sale_date.max().date())
+    insert_forecast='''INSERT INTO Inventory_Forecast (product_id,variant_id,forecast_date,period_end,horizon_days,forecast_quantity,
+            forecast_revenue,revenue_currency,model_name,run_id,target_role,frequency,data_cutoff) VALUES (%s,%s,%s,%s,%s,%s,%s,'GBP',%s,%s,%s,%s,%s)'''
+    batch=[]
     for (frequency,role,product,period),group in frame.groupby(['frequency','role','product_id','period']):
-        variant=store.one('SELECT * FROM Product_Variant WHERE product_id=%s ORDER BY variant_id LIMIT 1',(str(product),))
+        variant=variants.get(str(product))
         if not variant: raise BusinessError('Forecast product missing from catalog',409)
         start=pd.Timestamp(period); end=start+pd.offsets.MonthEnd(0) if frequency=='monthly' else start+timedelta(days=6)
         days=(end-start).days+1
         quantity=float(group.loc[group.target=='quantity_sold','forecast'].iloc[0]); revenue=float(group.loc[group.target=='revenue_gbp','forecast'].iloc[0])
         name='; '.join(group.model.unique())[:100]
-        fid=store.execute('''INSERT INTO Inventory_Forecast (product_id,variant_id,forecast_date,period_end,horizon_days,forecast_quantity,
-            forecast_revenue,revenue_currency,model_name,run_id,target_role,frequency,data_cutoff) VALUES (%s,%s,%s,%s,%s,%s,%s,'GBP',%s,%s,%s,%s,%s)''',
-            (str(product),variant['variant_id'],start.date(),end.date(),days,quantity,revenue,name,run_id,role,frequency,str(daily.sale_date.max().date())))
-        if frequency=='monthly' and role=='champion' and start==frame.loc[frame.frequency=='monthly','period'].min():
-            demand=quantity*(lead+review)/days
-            recommended=recommended_order(demand,safety,variant['on_hand'],variant['reserved'],variant['incoming'])
-            store.execute('''INSERT INTO Inventory_Recommendation (forecast_id,product_id,variant_id,current_stock,safety_stock,recommended_order_quantity,lead_time_days,review_period_days)
-                VALUES (%s,%s,%s,%s,%s,%s,%s,%s)''',(fid,str(product),variant['variant_id'],max(0,variant['on_hand']-variant['reserved']),safety,recommended,lead,review))
+        values=(str(product),variant['variant_id'],start.date(),end.date(),days,quantity,revenue,name,run_id,role,frequency,cutoff)
+        if not (frequency=='monthly' and role=='champion' and start==first_month):
+            batch.append(values);continue
+        fid=store.execute(insert_forecast,values)
+        plan=order_plan(quantity,days,sigma.get(str(product)),policy,variant['on_hand'],variant['reserved'],variant['incoming'])
+        store.execute('''INSERT INTO Inventory_Recommendation (forecast_id,product_id,variant_id,current_stock,safety_stock,recommended_order_quantity,lead_time_days,review_period_days)
+            VALUES (%s,%s,%s,%s,%s,%s,%s,%s)''',(fid,str(product),variant['variant_id'],max(0,plan['available']),plan['safety_stock'],plan['suggested'],policy['lead'],policy['review']))
+    store.execute_many(insert_forecast,batch)
     records=json.loads(frame.to_json(orient='records',date_format='iso'))
     metadata={**package['metadata'],'projection_horizons':{'monthly':3,'weekly':12},
         'source':'mysql:Daily_Sales','data_cutoff':str(daily.sale_date.max().date()),
@@ -146,6 +194,8 @@ def run_inference(store, folder=None, *, expected_incumbent=None, expected_finge
         'database':store.one('SELECT DATABASE() AS name')['name'],
         'source_rows':len(daily),'source_products':int(daily.product_id.nunique()),
         'scores':scores,
+        'inventory_policy':{**policy,'safety_stock':'max(floor, z * sku_backtest_rmse * sqrt((lead+review)/days_in_month))'},
+        'sku_error_sigma':sigma,
         'model_relative_path':folder.relative_to(ROOT).as_posix(),
         'source_sql':DAILY_SQL,
         'live_source_note':'Input queried from MySQL; CSV files are model evaluation artifacts only, never a runtime sales fallback.'}

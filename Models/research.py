@@ -169,7 +169,7 @@ def train_legacy(daily,source,activate=True):
     run_id=datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     folder=ROOT/'Models/results/plan_a_v2'/run_id
     folder.mkdir(parents=True,exist_ok=False)
-    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False).encode()
+    canonical=daily.sort_values(['product_id','sale_date']).to_csv(index=False,lineterminator='\n').encode()
     (folder/'daily_snapshot.csv').write_bytes(canonical)
     metadata=dict(run_id=run_id,source=source,snapshot_sha256=hashlib.sha256(canonical).hexdigest(),
         is_simulated=True,currency='GBP',evaluation_note='November 2011 is a previously inspected test period, not an untouched holdout.',
@@ -268,10 +268,12 @@ def inference(package,daily,horizons=None):
         trained=package['panels'][frequency].period.max()
         if history.period.max()<trained: raise ValueError('Input ends before packaged training cutoff')
         if set(history.product_id)!=set(package['panels'][frequency].product_id): raise ValueError('Product universe differs from package; retraining required')
+        count=horizons.get(frequency,1 if frequency=='monthly' else 2)
+        cache={}  # champion and best_ml are often the same model: predict it once.
         for role,candidate in choices.items():
-            count=horizons.get(frequency,1 if frequency=='monthly' else 2)
-            frame=predict(history,target,frequency,candidate,package['models'][(key,candidate)],package['columns'][(key,candidate)],count)
-            frame=frame.assign(frequency=frequency,target=target,role=role,model=candidate,run_id=package['metadata']['run_id'],data_cutoff=str(pd.to_datetime(daily.sale_date).max().date()),currency='GBP' if target=='revenue_gbp' else 'units',is_simulated=True)
+            if candidate not in cache:
+                cache[candidate]=predict(history,target,frequency,candidate,package['models'][(key,candidate)],package['columns'][(key,candidate)],count)
+            frame=cache[candidate].assign(frequency=frequency,target=target,role=role,model=candidate,run_id=package['metadata']['run_id'],data_cutoff=str(pd.to_datetime(daily.sale_date).max().date()),currency='GBP' if target=='revenue_gbp' else 'units',is_simulated=True)
             output.append(frame)
     return pd.concat(output,ignore_index=True)
 
